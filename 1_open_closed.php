@@ -1,4 +1,9 @@
 <?php
+/**
+ * Open-Closed
+ *
+ * Classes should be open for extension, but closed for modification
+ */
 
 /** NOT APPLYING SOLID */
 class example_not_applying_solid

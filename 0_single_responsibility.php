@@ -1,4 +1,9 @@
 <?php
+/**
+ * Single Responsibility
+ *
+ * A class should have a single responsibility
+ */
 
 /** NOT APPLYING SOLID */
 public function an_orchestra_man()
