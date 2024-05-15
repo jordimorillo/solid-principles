@@ -72,7 +72,7 @@ class RobotWithAntennas implements RobotThatCanWiggleAntennas, RobotThatCanSpinA
 
     public function spinAround()
     {
-        echo "I spin around!! :D"
+        echo "I spin around!! :D";
     }
 
     public function rotateArms()

@@ -25,23 +25,40 @@ class sam_child extends sam
 
 
 /** APPLYING SOLID */
-class sam
+interface cafeInterface {
+    public function name(): string;
+}
+
+class coffee implements cafeInterface
 {
-    public function execute()
+    public function name(): string
     {
-        echo "I do coffee";
+        return "cafe";
     }
 }
 
-class sam_child extends sam
+class capucchino implements cafeInterface
 {
-    public function execute()
+    public function name(): string
     {
-        parent::execute(); // Does the same as the parent "I do coffee"
+        return "capucchino";
     }
+}
 
-    public function sellWater()
+class sam
+{
+    public function execute(): cafeInterface
     {
-        echo "I sell water";
+        $cafe = new Coffee();
+        return $cafe->name();
+    }
+}
+
+class Eden extends sam
+{
+    public function execute(): cafeInterface
+    {
+        $cafe = new Capucchino();
+        return $cafe->name();
     }
 }

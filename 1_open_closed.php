@@ -25,11 +25,22 @@ class example_not_applying_solid
 
 
 /** APPLYING SOLID */
-class example_applying_solid
+interface example {
+    public function what_i_do();
+}
+
+class example_that_cut_things interface example
 {
     public function what_i_do()
     {
         echo "I cut things";
-        echo "and I paint things";
+    }
+}
+
+class example_that_paint_things interface example
+{
+    public function what_i_do()
+    {
+        echo "I paint things";
     }
 }
